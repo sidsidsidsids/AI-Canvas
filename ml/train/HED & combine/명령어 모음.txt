@@ -1,0 +1,16 @@
+PostprocessHED("./mat_images/bmw", "./edge_images/bmw", 300, 25.0/255.0, 5)
+
+PostprocessHED("./mat_images/cartoon_set", "./edge_images/cartoon_set", 256, 25.0/255.0, 5)
+
+PostprocessHED("./mat_images/panda", "./edge_images/panda", 256, 25.0/255.0, 5)
+
+PostprocessHED("./mat_images/sharks", "./edge_images/sharks", 256, 25.0/255.0, 5)
+
+
+PostprocessHED("./mat_images/maple_character1", "./edge_images/maple_character1", 256, 25.0/255.0, 5)
+
+PostprocessHED("./mat_images/maple_character2", "./edge_images/maple_character2", 256, 25.0/255.0, 5)
+
+PostprocessHED("./mat_images/maple_character3", "./edge_images/maple_character3", 256, 25.0/255.0, 5)
+
+PostprocessHED("./mat_images/maple_character4", "./edge_images/maple_character4", 256, 25.0/255.0, 5)

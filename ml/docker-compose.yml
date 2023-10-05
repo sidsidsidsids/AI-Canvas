@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:latest
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Seoul
+      - RABBITMQ_DEFAULT_USER=hp5393
+      - RABBITMQ_DEFAULT_PASS=ehrtnfl1!
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - my_network
+
+  ai:
+    container_name: ai
+    image: test/test:latest
+    restart: on-failure
+    environment:
+      - TZ=Asia/Seoul
+    ports:
+      - "8000:8000"
+    depends_on:
+      - rabbitmq
+    networks:
+      - my_network
+
+networks:
+  my_network:

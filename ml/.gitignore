@@ -1,0 +1,4 @@
+.env
+/venv
+/test_edges
+/test_results
